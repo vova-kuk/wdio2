@@ -2,7 +2,7 @@ const {expect} = require('chai');
 const email = Math.random() + 'vovakuk7@gmail.com';
 const firstName = 'Vova';
 const lastName = 'Kuk';
-const password = 'vovadrive777';
+const password = 'vova777';
 
 describe('Register page', () => {
     before(() => {
@@ -112,6 +112,12 @@ describe('Login page', () => {
         browser.pause(1000);
     })
 
+    it('should have a correct part of link', () => {
+        const link = $('*=Vova Kuk');
+        link.getText();
+        browser.pause(2000);
+    });
+
 
 })
 
@@ -122,9 +128,9 @@ describe('Home page', () => {
     })
 
     it('should have the right title', () => {
-        const actualTitle = browser.getTitle();
-        const expectedTitltle = firstName + lastName;
-        expect(actualTitle).equal(expectedTitltle);
+        const actual = browser.getTitle();
+        const expected = 'Progress Monitor';
+        expect(actual).equal(expected);
         browser.pause(5000);
     })
 })
