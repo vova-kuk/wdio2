@@ -10,9 +10,9 @@ describe('Register page', () => {
     })
 
     it('should have the right title', () => {
-        const actualTitle = browser.getTitle();
-        const expectedTitltle = 'Progress Monitor';
-        expect(actualTitle).equal(expectedTitltle);
+        const actual = browser.getTitle();
+        const expected = 'Progress Monitor';
+        expect(actual).equal(expected);
     })
 
     it('should have a correct title', () => {
