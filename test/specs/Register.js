@@ -1,8 +1,9 @@
 const {expect} = require('chai');
+
 const email = Math.random() + 'vovakuk7@gmail.com';
 const firstName = 'Vova';
 const lastName = 'Kuk';
-const password = 'vova777';
+const password = 'Vova777';
 
 describe('Register page', () => {
     before(() => {
@@ -131,8 +132,9 @@ describe('Home page', () => {
         const actual = browser.getTitle();
         const expected = 'Progress Monitor';
         expect(actual).equal(expected);
-        browser.pause(5000);
+        browser.pause(2000);
     })
 })
+
 
 
