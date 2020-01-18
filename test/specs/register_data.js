@@ -2,12 +2,12 @@ const HOST = 'https://stage.pasv.us';
 
 const URL_REGISTER = `${HOST}/user/register`;
 const URL_LOGIN = `${HOST}/user/login`;
-const email = Math.random().toFixed(4) + 'kakak@gmail.com';
+const email = Math.random().toFixed(4) + 'vovakuk7@gmail.com';
 
 const user = {
-    firstName: 'John',
-    lastName: 'Smith',
-    password: 'password',
+    firstName: 'Vova',
+    lastName: 'Kuk',
+    password: 'Vova777',
     phone: '14259195668',
     email: email,
     about: 'hdfkdfjldlkfj djdfsdfjdfkj kdfjdkfdj',

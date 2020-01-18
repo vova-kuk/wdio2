@@ -95,13 +95,13 @@ describe('Login page', () => {
         browser.url('https://stage.pasv.us/user/login')
     })
 
-    it('should fill Email field', () => {
+    it('should enter Email', () => {
         const element = $('form input[name="email"]');
         element.setValue(email);
         browser.pause(1000);
     })
 
-    it('should fill Password field', () => {
+    it('should enter Password', () => {
         const element = $('form input[name="password"]');
         element.setValue(password);
         browser.pause(1000);

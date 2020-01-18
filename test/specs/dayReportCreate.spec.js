@@ -13,10 +13,7 @@ describe('CREATE DAY REPORT', () => {
     it('should have the right title', () => {
         browser.url('https://stage.pasv.us/diary/create');
         browser.pause(5000);
-
     });
-
-
 });
 
 
