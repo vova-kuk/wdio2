@@ -85,7 +85,7 @@ describe('Register page', () => {
     it('should click button', () => {
         const element = $('form button[type="submit"]');
         element.click();
-        browser.pause(1000);
+        browser.pause(20000);
     })
 })
 

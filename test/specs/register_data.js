@@ -2,6 +2,7 @@ const HOST = 'https://stage.pasv.us';
 
 const URL_REGISTER = `${HOST}/user/register`;
 const URL_LOGIN = `${HOST}/user/login`;
+const URL_REPORT_CREATE = `${HOST}/diary/create`;
 const email = Math.random().toFixed(4) + 'vovakuk7@gmail.com';
 
 const user = {
@@ -45,4 +46,4 @@ const pageConfirmation = {
     h1: 'You are a new user',
 };
 
-module.exports = { URL_REGISTER, URL_LOGIN, user, pageRegister, pageRegisterSelectors, pageLogin, pageConfirmation };
+module.exports = { URL_REGISTER, URL_LOGIN, URL_REPORT_CREATE, user, pageRegister, pageRegisterSelectors, pageLogin, pageConfirmation };

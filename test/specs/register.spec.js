@@ -71,7 +71,7 @@ describe('Register page', () => {
     it('should click Submit button', () => {
         const element = $(pageRegisterSelectors.submitButton);
         element.click();
-        browser.pause(2000);
+        browser.pause(5000);
     });
 });
 
