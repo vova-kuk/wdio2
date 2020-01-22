@@ -1,41 +1,6 @@
 const { expect } = require('chai');
-const { URL_LOGIN, URL_REPORT_CREATE } = require('./register_data');
+const { URL_LOGIN, URL_REPORT_CREATE, userLogin, pageLoginSelectors, pageReportCreate, pageReportCreateSelectors } = require('./dayReportCreate_data');
 
-
-const userLogin = {
-    email: '1vovakuk7@gmail.com',
-    password: 'vova777'
-};
-
-const pageLoginSelectors = {
-    emailInput: 'form input[name="email"]',
-    passwordInput: 'form input[name="password"]',
-    submitButton: 'form button[type="submit"]'
-};
-
-const pageReportCreate = {
-    title: 'Progress Monitor',
-    h1: 'Create day report',
-    buttonText: 'Save',
-    morale: '9',
-    hours: '8',
-    description: 'Eat, sleep, code, rave, repeat...'
-};
-
-const pageReportCreateSelectors = {
-    h1: 'h1',
-    morale: 'form select[name="morale"]',
-    hours: 'form input[name="hours"]',
-    description: 'form textarea[name="description"]',
-    watchedLectures: 'form input[id="input-[3]"]',
-    readDocumentation: 'form input[id="input-[4]"]',
-    codePractice: 'form input[id="input-[5]"]',
-    quizPractice: 'form input[id="input-[6]"]',
-    interviewPreparation: 'form input[id="input-[7]"]',
-    recruiterPhoneCall: 'form input[id="input-[8]"]',
-    interviewTechnicalScreen: 'form input[id="input-[9]"]',
-    saveButton: 'form button[type="submit"]'
-};
 
 
 
@@ -126,8 +91,15 @@ describe('CREATE DAY REPORT', () => {
         element.click();
         browser.pause(5000);
     });
+});
 
-
+describe('Confirmation report create', () => {
+    it('should have a correct title', () => {
+        const actualH4text = $(pageReportCreateSelectors.h4).getText();
+        const expectedH4Text = pageReportCreate.confirmation;
+        expect(actualH4text).equal(expectedH4Text);
+        browser.pause(1000);
+    });
 });
 
 
