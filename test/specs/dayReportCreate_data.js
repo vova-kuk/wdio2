@@ -19,9 +19,9 @@ const pageReportCreate = {
     h1: 'Create day report',
     buttonText: 'Save',
     morale: '9',
-    hours: '8',
-    description: 'Eat, sleep, code, rave, repeat...',
-    confirmation: 'Diary created'
+    hours: '7',
+    description: 'Was at lecture by Sergey. Started work on my resume. JS and Java practice on CW. Watched video about CSS.',
+    confirmation: 'Get last (50) day reports'
 };
 
 const pageReportCreateSelectors = {
@@ -29,13 +29,13 @@ const pageReportCreateSelectors = {
     morale: 'form select[name="morale"]',
     hours: 'form input[name="hours"]',
     description: 'form textarea[name="description"]',
-    watchedLectures: 'form input[id="input-[3]"]',
-    readDocumentation: 'form input[id="input-[4]"]',
-    codePractice: 'form input[id="input-[5]"]',
-    quizPractice: 'form input[id="input-[6]"]',
-    interviewPreparation: 'form input[id="input-[7]"]',
-    recruiterPhoneCall: 'form input[id="input-[8]"]',
-    interviewTechnicalScreen: 'form input[id="input-[9]"]',
+    watchedLectures: 'form input[label="Watched lectures"]',
+    readDocumentation: 'form input[label="Read documentation"]',
+    codePractice: 'form input[label="Code practice"]',
+    quizPractice: 'form input[label="Quiz practice"]',
+    interviewPreparation: 'form input[label="Interview preparation"]',
+    recruiterPhoneCall: 'form input[label="Recruiter phone call"]',
+    interviewTechnicalScreen: 'form input[label="Interview technical screen"]',
     saveButton: 'form button[type="submit"]',
     h4: 'h4'
 };

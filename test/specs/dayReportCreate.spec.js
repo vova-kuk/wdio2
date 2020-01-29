@@ -62,29 +62,29 @@ describe('CREATE DAY REPORT', () => {
         browser.pause(1000);
     });
 
-    it('should click Quiz practice mark', () => {
-        const element = $(pageReportCreateSelectors.quizPractice);
-        element.click();
-        browser.pause(1000);
-    });
-
-    it('should click Interview preparation mark', () => {
-        const element = $(pageReportCreateSelectors.interviewPreparation);
-        element.click();
-        browser.pause(1000);
-    });
-
-    it('should click Recruiter phone call mark', () => {
-        const element = $(pageReportCreateSelectors.recruiterPhoneCall);
-        element.click();
-        browser.pause(1000);
-    });
-
-    it('should click Interview technical screen mark', () => {
-        const element = $(pageReportCreateSelectors.interviewTechnicalScreen);
-        element.click();
-        browser.pause(1000);
-    });
+    // it('should click Quiz practice mark', () => {
+    //     const element = $(pageReportCreateSelectors.quizPractice);
+    //     element.click();
+    //     browser.pause(1000);
+    // });
+    //
+    // it('should click Interview preparation mark', () => {
+    //     const element = $(pageReportCreateSelectors.interviewPreparation);
+    //     element.click();
+    //     browser.pause(1000);
+    // });
+    //
+    // it('should click Recruiter phone call mark', () => {
+    //     const element = $(pageReportCreateSelectors.recruiterPhoneCall);
+    //     element.click();
+    //     browser.pause(1000);
+    // });
+    //
+    // it('should click Interview technical screen mark', () => {
+    //     const element = $(pageReportCreateSelectors.interviewTechnicalScreen);
+    //     element.click();
+    //     browser.pause(1000);
+    // });
 
     it('should click Save button', () => {
         const element = $(pageReportCreateSelectors.saveButton);
