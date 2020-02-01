@@ -1,18 +1,7 @@
 const HOST = 'https://stage.pasv.us';
 
-const URL_LOGIN = `${HOST}/user/login`;
 const URL_REPORT_CREATE = `${HOST}/diary/create`;
 
-const userLogin = {
-    email: '1vovakuk7@gmail.com',
-    password: 'vova777'
-};
-
-const pageLoginSelectors = {
-    emailInput: 'form input[name="email"]',
-    passwordInput: 'form input[name="password"]',
-    submitButton: 'form button[type="submit"]'
-};
 
 const pageReportCreate = {
     title: 'Progress Monitor',
@@ -40,4 +29,4 @@ const pageReportCreateSelectors = {
     h4: 'h4'
 };
 
-module.exports = { URL_LOGIN, URL_REPORT_CREATE, userLogin, pageLoginSelectors, pageReportCreate, pageReportCreateSelectors};
+module.exports = { URL_REPORT_CREATE, pageReportCreate, pageReportCreateSelectors};
