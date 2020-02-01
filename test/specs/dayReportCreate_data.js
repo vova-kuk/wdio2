@@ -20,7 +20,7 @@ const pageReportCreate = {
     buttonText: 'Save',
     morale: '9',
     hours: '7',
-    description: 'Was at lecture by Sergey. Started work on my resume. JS and Java practice on CW. Watched video about CSS.',
+    description: 'Started work on my resume. JS and Java practice on CW. Watched video about CSS.',
     confirmation: 'Get last (50) day reports'
 };
 
